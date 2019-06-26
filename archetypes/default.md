@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
+title: "{{ .Name | humanize | title }}"
+weight: 1
+# bookFlatSection: false
+# bookShowToC: true
 ---
-
